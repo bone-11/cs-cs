@@ -56,32 +56,32 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ziyao Huang</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ziyao Huang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Fan Tang</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Fan Tang</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yong Zhang</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yong Zhang</a>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Juan Cao</a><sup>*</sup>,</span>
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Juan Cao</a>,</span>
                     <span class="author-block">
-                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chengyu Li</a><sup>*</sup>,</span>
+                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chengyu Li</a>,</span>
                       <span class="author-block">
-                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Sheng Tang</a><sup>*</sup>,</span>
+                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Sheng Tang</a>,</span>
                         <span class="author-block">
-                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jintao Li</a><sup>*</sup>,</span>
+                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jintao Li</a>,</span>
                           <span class="author-block">
-                            <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tong-Yee Lee</a><sup>*</sup>,</span>
+                            <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tong-Yee Lee</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Institution Name<br>Preprint</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
-                  <div class="column has-text-centered">
+                  <!-- Arxiv PDF link -->
+                  <!-- <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -90,10 +90,10 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -101,10 +101,10 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -112,17 +112,17 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
+                </a> -->
               </span>
             </div>
           </div>
@@ -158,7 +158,14 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            In this study, we revisit the fundamental setting of face-swapping models and reveal that only using implicit supervision for training leads to the difficulty of advanced methods to preserve the source identity.
+We propose a novel reverse pseudo-input generation approach to offer supplemental data for training face-swapping models, which addresses the aforementioned issue.
+Unlike the traditional pseudo-label-based training strategy, we assume that arbitrary real facial images could serve as the ground-truth outputs for the face-swapping network and try to generate corresponding input &lt;source, target&gt; pair data. 
+Specifically, we involve a source-creating surrogate that alters the attributes of the real image while keeping the identity, and a target-creating surrogate intends to synthesize attribute-preserved target images with different identities. 
+Our framework, which utilizes proxy-paired data as explicit supervision to direct the face-swapping training process, partially fulfills a credible and effective optimization direction to boost the identity-preserving capability.
+We design explicit and implicit adaption strategies to better approximate the explicit supervision for face swapping.
+Quantitative and qualitative experiments on FF++, FFHQ, and wild images show that our framework could improve the performance of various face-swapping pipelines in terms of visual fidelity and ID preserving. 
+Furthermore, we display applications with our method on re-aging, swappable attribute customization, cross-domain, and video face swapping.
           </p>
         </div>
       </div>
