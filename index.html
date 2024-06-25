@@ -56,26 +56,26 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ziyao Huang</a>,</span>
+                <a href="https://scholar.google.com/citations?user=nijlf5YAAAAJ" target="_blank">Ziyao Huang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Fan Tang</a>,</span>
+                  <a href="https://scholar.google.com/citations?user=PdKElfwAAAAJ" target="_blank">Fan Tang</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yong Zhang</a>,</span>
+                    <a href="https://yzhang2016.github.io/" target="_blank">Yong Zhang</a>,</span>
                   </span>
                   <span class="author-block">
-                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Juan Cao</a>,</span>
+                    <a>Juan Cao</a>,</span>
                     <span class="author-block">
-                      <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Chengyu Li</a>,</span>
+                    <a>Chengyu Li</a>,</span>
                       <span class="author-block">
-                        <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Sheng Tang</a>,</span>
+                        <a>Sheng Tang</a>,</span>
                         <span class="author-block">
-                          <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Jintao Li</a>,</span>
+                          <a>Jintao Li</a>,</span>
                           <span class="author-block">
-                            <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Tong-Yee Lee</a></span>
+                            <a href="http://graphics.csie.ncku.edu.tw/Tony/tony.htm" target="_blank">Tong-Yee Lee</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Preprint</span>
+                    <span class="author-block">Institute of Computing Technology, Chinese Academy of Sciences, China<br>AI Lab, Tencent, China<br>National Cheng Kung University, Taiwan</span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -134,7 +134,7 @@
 
 
 
-<!-- Teaser video-->
+<!-- Teaser image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -147,28 +147,13 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <!-- <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> --> -->
-<!-- End teaser video -->
+<!-- End teaser image -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
+    
+    <!-- <div class="container is-max-desktop"> -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
@@ -185,45 +170,77 @@ Furthermore, we display applications with our method on re-aging, swappable attr
           </p>
         </div>
       </div>
+    <!-- </div> -->
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+    <div class="container is-max-desktop">
+
+      <h2 class="title is-3">Method</h2>
+      <div class="item">
+        <img src="static/images/pipeline_png.png" alt="MY ALT TEXT"/>
+        <h2 class="content has-text-justified">
+          Comparison between different swapping training frameworks.
+          (a) Face-swapping training with ground-truth swapped image $y_{gt}$;
+          (b) Current swapping training with ID loss and reconstruction loss;
+          (c) Our CS$^2$ synthesis proxy paired data by dual-creating surrogates from one real image, and adaptation is operated to get the required training data.
+          Credible supervision is applied by $L_{rec}$ between $y_{out}$ and $y_{gt}$ where a real image is utilized to guide swapping.
+          The reserve design of dual surrogates prevents error accumulation from the multi-step synthesis process.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
+
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Image Results</h2>
+
+      <h3 class="title is-4">Comparisons on FF++</h3>
+      <div class="item">
+        <img src="static/images/ff++_png.png" alt="MY ALT TEXT"/>
+      </div>
+
+      <br>
+
+      <h3 class="title is-4">Comparisons on More Data</h3>
+      <div class="item">
+        <img src="static/images/more_png.png" alt="MY ALT TEXT"/>
+      </div>
+
+      <br>
+      
+      <h3 class="title is-4">Swappable Attribute Customization</h3>
+      <div class="item">
+        <img src="static/images/adaptation_edit_png.png" alt="MY ALT TEXT"/>
+      </div>
+
+      <br>
+
+      <h3 class="title is-4">cross-domain Results</h3>
+      <div class="item">
+        <img src="static/images/cross_png.png" alt="MY ALT TEXT"/>
+      </div>
+
+      <br>
+
+      <h3 class="title is-4">Re-aging</h3>
+      <div class="item">
+        <img src="static/images/reaging_png.png" alt="MY ALT TEXT"/>
+      </div>
+
+    </div>
+
   </div>
 </div>
 </div>
@@ -238,13 +255,13 @@ Furthermore, we display applications with our method on re-aging, swappable attr
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Video Results</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
+
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/jYVJHFWT_YA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -253,58 +270,6 @@ Furthermore, we display applications with our method on re-aging, swappable attr
 </section>
 <!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
